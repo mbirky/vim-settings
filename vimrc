@@ -30,3 +30,6 @@ if has("autocmd")
     autocmd BufNewFile *.py :r ~/.vim/templates/skeleton.py
   augroup END
 endif
+
+" Wrap git commit massages at 72 characters
+au FileType gitcommit setlocal tw=72
